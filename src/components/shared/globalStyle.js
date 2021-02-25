@@ -1,7 +1,7 @@
 import styled, { createGlobalStyle } from "styled-components";
 import { Link } from "react-router-dom";
 
-const GlobalStyle = createGlobalStyle` 
+const GlobalStyle = createGlobalStyle`      
     :root {
       --dark-blue: ${({ theme }) => theme.darkBlue}; 
       --very-dark-blue-1: ${({ theme }) => theme.veryDarkBlue1}; 
@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
       --homepage-items: 14px;
       --detail-page: 16px;
       --title: 20px;
-      --font-family: 'Nunito Sans';
+      --font-family: Nunito Sans;
       --weight-1: 300;
       --weight-2: 600;
       --weight-3: 800;
@@ -23,12 +23,12 @@ const GlobalStyle = createGlobalStyle`
       padding: 0;
       margin: 0;
       box-sizing: border-box;
+      font-family: "Inter", sans-serif;
     }
 
     body,
     html {
       scroll-behavior: smooth;
-      font-family: "nunito";
       font-size: var(--detail-page);
       background: var(--very-dark-blue-1);
     }
