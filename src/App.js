@@ -53,7 +53,6 @@ const App = () => {
                 countries={countries}
                 themeToggler={themeToggler}
                 getRegion={getRegion}
-                s
                 region={region}
                 getSearchValue={getSearchValue}
                 search={search}

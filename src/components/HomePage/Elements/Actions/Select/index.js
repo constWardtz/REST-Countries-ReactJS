@@ -3,9 +3,7 @@ import React from "react";
 import { SelectContainer } from "./Select";
 
 const Select = ({ countries, getRegion }) => {
-  // const COUNTRY_REGIONS = countries
-  //   .map((country) => country.region)
-  //   .filter((x, i, array) => array.indexOf(x) === i);
+  // Remove duplication in regions.
   const COUNTRY_REGIONS = [
     ...new Set(countries.map((country) => country.region)),
   ];
