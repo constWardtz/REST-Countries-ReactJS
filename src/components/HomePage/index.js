@@ -2,7 +2,6 @@ import React from "react";
 
 import { Navbar, Actions, CountryList } from "./Elements/";
 
-import { Home } from "./Style";
 import { CostumLink } from "../shared/globalStyle";
 
 const HomePage = ({
@@ -15,7 +14,7 @@ const HomePage = ({
   overViewSingleCountry,
 }) => {
   return (
-    <Home>
+    <>
       <CostumLink to="/">
         <Navbar themeToggler={themeToggler} />
       </CostumLink>
@@ -30,7 +29,7 @@ const HomePage = ({
         search={search}
         overViewSingleCountry={overViewSingleCountry}
       />
-    </Home>
+    </>
   );
 };
 
